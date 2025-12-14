@@ -14,5 +14,6 @@ console.log('Calculate (10, 5):', {
 
 // Test C++ Wrapper implementation
 console.log('\n=== Testing C++ Wrapper Implementation ===');
-console.log('Greet (C++):', addon.greetCPP('Node.js'));
-console.log('User Info:', addon.getUserInfo());
+const greeter = new addon.Greeter();
+console.log('Greet (C++):', greeter.greet('Node.js'));
+console.log('User Info:', greeter.getUserInfo());
