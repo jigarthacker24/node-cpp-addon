@@ -1,0 +1,26 @@
+{
+  "name": "cpp-addon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "cpp",
+    "addon",
+    "napi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Node.js addon example with C++",
+  "dependencies": {
+    "node-addon-api": "^7.1.1"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.3.1"
+  },
+  "gypfile": true
+}
