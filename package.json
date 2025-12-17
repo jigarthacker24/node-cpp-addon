@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "setup": "npm install && npm run build",
+    "setup": "npm install --ignore-scripts",
     "build": "make -C clibs mac install && node-gyp rebuild",
     "start": "node index.js",
     "test": "node index.js",

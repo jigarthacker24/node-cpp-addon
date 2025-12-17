@@ -5,5 +5,5 @@
 npm run clean
 npm run setup
 npm run build
-node start
+npm run start
 ```
