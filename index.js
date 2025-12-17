@@ -17,3 +17,9 @@ console.log('\n=== Testing C++ Wrapper Implementation ===');
 const greeter = new addon.Greeter();
 console.log('Greet (C++):', greeter.greet('Node.js'));
 console.log('User Info:', greeter.getUserInfo());
+
+
+// Test C++ Shared Lib implementation
+console.log('\n=== Testing C++ Shared Lib Implementation ===');
+console.log('Add (C++ Shared Lib):', addon.add(10, 5));
+console.log('Get Greeting (C++ Shared Lib):', addon.getGreeting('Node.js'));

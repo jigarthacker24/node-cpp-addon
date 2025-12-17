@@ -1,4 +1,5 @@
 #include "greeter.h"
+#include "usesharedlib.h"
 
 Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
     // Initialize C API functions
@@ -11,6 +12,9 @@ Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
 
     // Initialize C++ Wrapper
     Greeter::Init(env, exports);
+    
+    // Initialize C++ Shared Lib Wrapper
+    InitSharedLibWrapper(env, exports);
     
     return exports;
 }

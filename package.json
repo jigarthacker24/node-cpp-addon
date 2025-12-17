@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node-gyp rebuild",
+    "setup": "npm install && npm run build",
+    "build": "make -C clibs mac install && node-gyp rebuild",
     "start": "node index.js",
-    "test": "node index.js"
+    "test": "node index.js",
+    "clean": "make -C clibs clean && node-gyp clean && rm -rf build/ node_modules/ && rm -rf *.so *.dylib"
   },
   "keywords": [
     "node",
